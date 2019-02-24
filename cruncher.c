@@ -17,7 +17,25 @@ int main() {
 
 
     // Tests
+    printf("Do you have any tests (y/n): ");
 
+    char testsYN;
+    scanf("%c", &testsYN);
+    
+    while((testsYN != 'y') && (testsYN != 'n')) {
+        printf("Oops! Please enter y or n: ");
+        scanf("%c", &testsYN);
+    }
+
+    printf("How many tests? ");
+
+    int testsNUM;
+    scanf("%i", &testsNUM);
+
+    while(testsNUM < 0) {
+        printf("Oops! Please enter a number greater than zero: ");
+        scanf("%i", &testsNUM);
+    }
 
     // Quizzes
 
