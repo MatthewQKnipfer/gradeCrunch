@@ -23,8 +23,16 @@ int main() {
         exit(1);
     }
 
-    // Do you have these segments?
+    
+
+
+
     printf("Let's get into it.\n\n\n");
+
+
+
+
+
 
     // Final
     printf("Do you have a final (y/n): ");
@@ -60,18 +68,90 @@ int main() {
     }
 
     // Quizzes
+    printf("Do you have any quizzes (y/n): ");
 
+    char quizzesYN;
+    scanf("%c", &quizzesYN);
+    
+    while((quizzesYN != 'y') && (quizzesYN != 'n')) {
+        printf("Oops! Please enter y or n: ");
+        scanf("%c", &quizzesYN);
+    }
+
+    printf("How many quizzes? ");
+
+    int quizzesNUM;
+    scanf("%i", &quizzesNUM);
+
+    while(quizzesNUM < 0) {
+        printf("Oops! Please enter a number greater than zero: ");
+        scanf("%i", &quizzesNUM);
+    }
 
     // Projects
+    printf("Do you have any projects (y/n): ");
 
+    char projectsYN;
+    scanf("%c", &projectsYN);
+    
+    while((projectsYN != 'y') && (projectsYN != 'n')) {
+        printf("Oops! Please enter y or n: ");
+        scanf("%c", &projectsYN);
+    }
+
+    printf("How many projects? ");
+
+    int projectsNUM;
+    scanf("%i", &projectsNUM);
+
+    while(projectsNUM < 0) {
+        printf("Oops! Please enter a number greater than zero: ");
+        scanf("%i", &projectsNUM);
+    }
 
     // Homework
+    printf("Do you have any homework (y/n): ");
 
+    char homeworkYN;
+    scanf("%c", &homeworkYN);
+    
+    while((homeworkYN != 'y') && (homeworkYN != 'n')) {
+        printf("Oops! Please enter y or n: ");
+        scanf("%c", &homeworkYN);
+    }
+
+    printf("How many homework? ");
+
+    int homeworkNUM;
+    scanf("%i", &homeworkNUM);
+
+    while(homeworkNUM < 0) {
+        printf("Oops! Please enter a number greater than zero: ");
+        scanf("%i", &homeworkNUM);
+    }
 
     // Participation
+    printf("Are you graded on participation (y/n): ");
+
+    char participationYN;
+    scanf("%c", &participationYN);
+    
+    while((participationYN != 'y') && (participationYN != 'n')) {
+        printf("Oops! Please enter y or n: ");
+        scanf("%c", &participationYN);
+    }
 
 
     // Attendance
+    printf("Are you graded on attendance (y/n): ");
+
+    char attendanceYN;
+    scanf("%c", &attendanceYN);
+    
+    while((attendanceYN != 'y') && (attendanceYN != 'n')) {
+        printf("Oops! Please enter y or n: ");
+        scanf("%c", &attendanceYN);
+    }
 
 
     // Something else?
