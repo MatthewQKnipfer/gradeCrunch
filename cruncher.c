@@ -39,12 +39,11 @@ int main() {
 
     char finalYN;
     scanf("%c", &finalYN);
-    
+
     while((finalYN != 'y') && (finalYN != 'n')) {
         printf("Oops! Please enter y or n: ");
         scanf("%c", &finalYN);
     }
-
 
     // Tests
     printf("Do you have any tests (y/n): ");
