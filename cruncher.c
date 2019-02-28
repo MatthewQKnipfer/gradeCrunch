@@ -45,97 +45,127 @@ int main() {
         scanf("%c", &finalYN);
     }
 
-    // Tests
+    // TESTS
     printf("Do you have any tests (y/n): ");
 
+    // Declare y/n and scan
     char testsYN;
     scanf("%c", &cont);
     scanf("%c", &testsYN);
     
+    // Verify entered y or n
     while((testsYN != 'y') && (testsYN != 'n')) {
         printf("\nOops! Please enter y or n: ");
         scanf("%c", &testsYN);
     }
 
-    printf("How many tests? ");
+    // If yes:
+    if (testsYN == 'y') {
+        printf("How many tests? ");
 
-    int testsNUM;
-    scanf("%c", &cont);
-    scanf("%i", &testsNUM);
-
-    while(testsNUM < 0) {
-        printf("\nOops! Please enter a number greater than zero: ");
+        int testsNUM;
+        scanf("%c", &cont);
         scanf("%i", &testsNUM);
+    
+
+        while(testsNUM < 0) {
+            printf("\nOops! Please enter a number greater than zero: ");
+            scanf("%i", &testsNUM);
+        }
     }
 
-    // Quizzes
+
+    // QUIZZES
     printf("Do you have any quizzes (y/n): ");
 
+    // Declare y/n and scan
     char quizzesYN;
     scanf("%c", &cont);
     scanf("%c", &quizzesYN);
     
+    // Verify entered y or n
     while((quizzesYN != 'y') && (quizzesYN != 'n')) {
         printf("\nOops! Please enter y or n: ");
         scanf("%c", &quizzesYN);
     }
 
-    printf("How many quizzes? ");
+    // If yes:
+    if (quizzesYN == 'y') {
+        printf("How many quizzes? ");
 
-    int quizzesNUM;
-    scanf("%c", &cont);
-    scanf("%i", &quizzesNUM);
-
-    while(quizzesNUM < 0) {
-        printf("\nOops! Please enter a number greater than zero: ");
+        int quizzesNUM;
+        scanf("%c", &cont);
         scanf("%i", &quizzesNUM);
+    
+
+        while(quizzesNUM < 0) {
+            printf("\nOops! Please enter a number greater than zero: ");
+            scanf("%i", &quizzesNUM);
+        }
     }
 
-    // Projects
+
+    // PROJECTS
     printf("Do you have any projects (y/n): ");
 
+    // Declare y/n
     char projectsYN;
     scanf("%c", &cont);
     scanf("%c", &projectsYN);
     
+    // Verify entered y or n
     while((projectsYN != 'y') && (projectsYN != 'n')) {
         printf("\nOops! Please enter y or n: ");
         scanf("%c", &projectsYN);
     }
 
-    printf("How many projects? ");
 
-    int projectsNUM;
-    scanf("%c", &cont);
-    scanf("%i", &projectsNUM);
+    // If yes:
+    if (projectsYN == 'y') {
+        printf("How many projects? ");
 
-    while(projectsNUM < 0) {
-        printf("\nOops! Please enter a number greater than zero: ");
+        int projectsNUM;
+        scanf("%c", &cont);
         scanf("%i", &projectsNUM);
+    
+
+        while(projectsNUM < 0) {
+            printf("\nOops! Please enter a number greater than zero: ");
+            scanf("%i", &projectsNUM);
+        }
     }
 
-    // Homework
+    
+    // HOMEWORK
     printf("Do you have any homework (y/n): ");
 
+    // Declare y/n
     char homeworkYN;
     scanf("%c", &cont);
     scanf("%c", &homeworkYN);
     
+    // Verify entered y or n
     while((homeworkYN != 'y') && (homeworkYN != 'n')) {
         printf("\nOops! Please enter y or n: ");
         scanf("%c", &homeworkYN);
     }
 
-    printf("How many homework? ");
 
-    int homeworkNUM;
-    scanf("%c", &cont);
-    scanf("%i", &homeworkNUM);
+    // If yes:
+    if (homeworkYN == 'y') {
+        printf("How many homework assignments? ");
 
-    while(homeworkNUM < 0) {
-        printf("\nOops! Please enter a number greater than zero: ");
+        int homeworkNUM;
+        scanf("%c", &cont);
         scanf("%i", &homeworkNUM);
+    
+
+        while(homeworkNUM < 0) {
+            printf("\nOops! Please enter a number greater than zero: ");
+            scanf("%i", &homeworkNUM);
+        }
     }
+
 
     // Participation
     printf("Are you graded on participation (y/n): ");
