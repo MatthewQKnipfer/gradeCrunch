@@ -42,6 +42,7 @@ int main() {
 
     while((finalYN != 'y') && (finalYN != 'n')) {
         printf("\nOops! Please enter y or n: ");
+        scanf("%c", &cont);
         scanf("%c", &finalYN);
     }
 
@@ -56,6 +57,7 @@ int main() {
     // Verify entered y or n
     while((testsYN != 'y') && (testsYN != 'n')) {
         printf("\nOops! Please enter y or n: ");
+        scanf("%c", &cont);
         scanf("%c", &testsYN);
     }
 
@@ -70,6 +72,7 @@ int main() {
 
         while(testsNUM < 0) {
             printf("\nOops! Please enter a number greater than zero: ");
+            scanf("%c", &cont);
             scanf("%i", &testsNUM);
         }
     }
@@ -86,6 +89,7 @@ int main() {
     // Verify entered y or n
     while((quizzesYN != 'y') && (quizzesYN != 'n')) {
         printf("\nOops! Please enter y or n: ");
+        scanf("%c", &cont);
         scanf("%c", &quizzesYN);
     }
 
@@ -100,6 +104,7 @@ int main() {
 
         while(quizzesNUM < 0) {
             printf("\nOops! Please enter a number greater than zero: ");
+            scanf("%c", &cont);
             scanf("%i", &quizzesNUM);
         }
     }
@@ -116,6 +121,7 @@ int main() {
     // Verify entered y or n
     while((projectsYN != 'y') && (projectsYN != 'n')) {
         printf("\nOops! Please enter y or n: ");
+        scanf("%c", &cont);
         scanf("%c", &projectsYN);
     }
 
@@ -131,6 +137,7 @@ int main() {
 
         while(projectsNUM < 0) {
             printf("\nOops! Please enter a number greater than zero: ");
+            scanf("%c", &cont);
             scanf("%i", &projectsNUM);
         }
     }
@@ -147,6 +154,7 @@ int main() {
     // Verify entered y or n
     while((homeworkYN != 'y') && (homeworkYN != 'n')) {
         printf("\nOops! Please enter y or n: ");
+        scanf("%c", &cont);
         scanf("%c", &homeworkYN);
     }
 
@@ -162,6 +170,7 @@ int main() {
 
         while(homeworkNUM < 0) {
             printf("\nOops! Please enter a number greater than zero: ");
+            scanf("%c", &cont);
             scanf("%i", &homeworkNUM);
         }
     }
@@ -176,6 +185,7 @@ int main() {
     
     while((participationYN != 'y') && (participationYN != 'n')) {
         printf("\nOops! Please enter y or n: ");
+        scanf("%c", &cont);
         scanf("%c", &participationYN);
     }
 
@@ -189,6 +199,7 @@ int main() {
     
     while((attendanceYN != 'y') && (attendanceYN != 'n')) {
         printf("\nOops! Please enter y or n: ");
+        scanf("%c", &cont);
         scanf("%c", &attendanceYN);
     }
 
