@@ -205,6 +205,34 @@ int main() {
 
 
     // Something else?
+    printf("Do you have any other criteria you're graded on (y/n): ");
+
+    char otherYN;
+    scanf("%c", &cont);
+    scanf("%c", &otherYN);
+    
+    while((otherYN != 'y') && (otherYN != 'n')) {
+        printf("\nOops! Please enter y or n: ");
+        scanf("%c", &cont);
+        scanf("%c", &otherYN);
+    }
+
+    // If yes:
+    if (otherYN == 'y') {
+        printf("How many other criteria? ");
+
+        int otherNUM;
+        scanf("%c", &cont);
+        scanf("%i", &otherNUM);
+    
+
+        while(otherNUM < 0) {
+            printf("\nOops! Please enter a number greater than zero: ");
+            scanf("%c", &cont);
+            scanf("%i", &otherNUM);
+        }
+    }
+
 
 
     return 0;
