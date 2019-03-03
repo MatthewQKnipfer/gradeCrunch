@@ -34,8 +34,8 @@ int main() {
 
 
     // Final
+    // Do you have a final?
     printf("Do you have a final (y/n): ");
-
     char finalYN;
     scanf("%c", &cont);
     scanf("%c", &finalYN);
@@ -46,15 +46,25 @@ int main() {
         scanf("%c", &finalYN);
     }
 
-    // TESTS
-    printf("Do you have any tests (y/n): ");
+    // Portion of syllabus grade
+    printf("What percentage of your grade does it account for (integer/100): ")
+    int finalPORTION;
+    scanf("%c", &cont);
+    scanf("%i", &finalPORTION);
 
-    // Declare y/n and scan
+    while(finalPORTION < 0) {
+        printf("\nOops! Please enter a number greater than 0: ");
+        scanf("%c", &cont);
+        scanf("%i", &finalPORTION);
+    }
+
+    // TESTS
+    // Do you have tests?
+    printf("Do you have any tests (y/n): ");
     char testsYN;
     scanf("%c", &cont);
     scanf("%c", &testsYN);
     
-    // Verify entered y or n
     while((testsYN != 'y') && (testsYN != 'n')) {
         printf("\nOops! Please enter y or n: ");
         scanf("%c", &cont);
