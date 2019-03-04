@@ -47,15 +47,17 @@ int main() {
     }
 
     // Portion of syllabus grade
-    printf("What percentage of your grade does it account for (integer/100): ")
-    int finalPORTION;
-    scanf("%c", &cont);
-    scanf("%i", &finalPORTION);
-
-    while(finalPORTION < 0) {
-        printf("\nOops! Please enter a number greater than 0: ");
+    if (finalYN == 'y') {
+        printf("What percentage of your grade does the final account for (integer/100): ");
+        int finalPORTION;
         scanf("%c", &cont);
         scanf("%i", &finalPORTION);
+
+        while(finalPORTION < 0) {
+            printf("\nOops! Please enter a number greater than or equal to 0: ");
+            scanf("%c", &cont);
+            scanf("%i", &finalPORTION);
+        }
     }
 
     // TESTS
@@ -81,9 +83,23 @@ int main() {
     
 
         while(testsNUM < 0) {
-            printf("\nOops! Please enter a number greater than zero: ");
+            printf("\nOops! Please enter a number greater than or equal to zero: ");
             scanf("%c", &cont);
             scanf("%i", &testsNUM);
+        }
+    }
+
+    // Portion of syllabus grade
+    if (testsYN == 'y') {
+        printf("What total percentage of your grade do your tests account for (integer/100): ");
+        int testsPORTION;
+        scanf("%c", &cont);
+        scanf("%i", &testsPORTION);
+
+        while(testsPORTION < 0) {
+            printf("\nOops! Please enter a number greater than or equal to 0: ");
+            scanf("%c", &cont);
+            scanf("%i", &testsPORTION);
         }
     }
 
@@ -113,9 +129,23 @@ int main() {
     
 
         while(quizzesNUM < 0) {
-            printf("\nOops! Please enter a number greater than zero: ");
+            printf("\nOops! Please enter a number greater than or equal to zero: ");
             scanf("%c", &cont);
             scanf("%i", &quizzesNUM);
+        }
+    }
+
+    // Portion of syllabus grade
+    if (quizzesYN == 'y') {
+        printf("What total percentage of your grade do your quizzes account for (integer/100): ");
+        int quizzesPORTION;
+        scanf("%c", &cont);
+        scanf("%i", &quizzesPORTION);
+
+        while(quizzesPORTION < 0) {
+            printf("\nOops! Please enter a number greater than or equal to 0: ");
+            scanf("%c", &cont);
+            scanf("%i", &quizzesPORTION);
         }
     }
 
@@ -152,6 +182,20 @@ int main() {
         }
     }
 
+    // Portion of syllabus grade
+    if (projectsYN == 'y') {
+        printf("What total percentage of your grade do your projects account for (integer/100): ");
+        int projectsPORTION;
+        scanf("%c", &cont);
+        scanf("%i", &projectsPORTION);
+
+        while(projectsPORTION < 0) {
+            printf("\nOops! Please enter a number greater than or equal to 0: ");
+            scanf("%c", &cont);
+            scanf("%i", &projectsPORTION);
+        }
+    }
+
     
     // HOMEWORK
     printf("Do you have any homework (y/n): ");
@@ -179,9 +223,23 @@ int main() {
     
 
         while(homeworkNUM < 0) {
-            printf("\nOops! Please enter a number greater than zero: ");
+            printf("\nOops! Please enter a number greater than or equal to zero: ");
             scanf("%c", &cont);
             scanf("%i", &homeworkNUM);
+        }
+    }
+
+    // Portion of syllabus grade
+    if (homeworkYN == 'y') {
+        printf("What total percentage of your grade does your homework account for (integer/100): ");
+        int homeworkPORTION;
+        scanf("%c", &cont);
+        scanf("%i", &homeworkPORTION);
+
+        while(homeworkPORTION < 0) {
+            printf("\nOops! Please enter a number greater than or equal to 0: ");
+            scanf("%c", &cont);
+            scanf("%i", &homeworkPORTION);
         }
     }
 
@@ -199,6 +257,20 @@ int main() {
         scanf("%c", &participationYN);
     }
 
+    // Portion of syllabus grade
+    if (participationYN == 'y') {
+        printf("What total percentage of your grade does participation account for (integer/100): ");
+        int participationPORTION;
+        scanf("%c", &cont);
+        scanf("%i", &participationPORTION);
+
+        while(participationPORTION < 0) {
+            printf("\nOops! Please enter a number greater than or equal to 0: ");
+            scanf("%c", &cont);
+            scanf("%i", &participationPORTION);
+        }
+    }
+
 
     // Attendance
     printf("Are you graded on attendance (y/n): ");
@@ -211,6 +283,20 @@ int main() {
         printf("\nOops! Please enter y or n: ");
         scanf("%c", &cont);
         scanf("%c", &attendanceYN);
+    }
+
+    // Portion of syllabus grade
+    if (attendanceYN == 'y') {
+        printf("What total percentage of your grade does attendance account for (integer/100): ");
+        int attendancePORTION;
+        scanf("%c", &cont);
+        scanf("%i", &attendancePORTION);
+
+        while(attendancePORTION < 0) {
+            printf("\nOops! Please enter a number greater than or equal to 0: ");
+            scanf("%c", &cont);
+            scanf("%i", &attendancePORTION);
+        }
     }
 
 
