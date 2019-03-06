@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 int main() {
 
     // Welcome
@@ -327,8 +328,17 @@ int main() {
             scanf("%c", &cont);
             scanf("%i", &otherNUM);
         }
-    }
 
+        for (int i = 1; i <= otherNUM; i++) {
+            printf("Name other subject number %i: ", i);
+
+// TODO: Find out how to use strings in C
+            str otherNAME;
+
+            scanf("%c", &cont);
+            scanf("%s", &otherNAME);
+        }
+    }
 
 
     return 0;
