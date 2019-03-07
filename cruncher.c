@@ -1,3 +1,6 @@
+/* It turns out that due to the lack of strings in C, this would not be a good language to use since I wish to allow the user
+    to name the other sections on their syllabus.  At this point, I will be moving this project forward in Python */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
