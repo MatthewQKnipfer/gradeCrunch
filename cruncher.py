@@ -7,40 +7,40 @@
 # Homework
 
 def have():
-    homeworkYN = input("Do you have homework (yes or no): ")
+    homeworkYN = input("Do you have homework (True/False): ")
 
-    if homeworkYN == "yes":
+    if homeworkYN == True:
         x = 1
     else:
         x = 2
 
     # Quizzes
-    quizYN = input("Do you have quizzes (yes or no): ")
+    quizYN = input("Do you have quizzes (True/False): ")
 
-    if quizYN == "yes":
+    if quizYN == True:
         x = 1
     else:
         x = 2
     # Tests
-    testYN = input("Do you have tests (yes or no): ")
+    testYN = input("Do you have tests (True/False): ")
 
-    if testYN == "yes":
+    if testYN == True:
         x = 1
     else:
         x = 2
 
     # Projects
-    projectYN = input("Do you have tests (yes or no): ")
+    projectYN = input("Do you have tests (True/False): ")
 
-    if projectYN == "yes":
+    if projectYN == True:
         x = 1
     else:
         x = 2
 
     # Final
-    finalYN = input("Do you have quizzes (yes or no): ")
+    finalYN = input("Do you have quizzes (True/False): ")
 
-    if finalYN == "yes":
+    if finalYN == True:
         x = 1
     else:
         x = 2
