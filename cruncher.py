@@ -1,4 +1,5 @@
 # author: Matthew Q. Knipfer
+# Description: This program asks the user what criteria they will be graded on in a class, how those allocations of points are established, how they have performed so far, and creates a table of possible outcomes
 
 
 
