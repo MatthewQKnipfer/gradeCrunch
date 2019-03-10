@@ -50,3 +50,4 @@ def have():
         x = 2
 
 have(True, 1, True, 1, True, 1, True, True, True, True)
+have(False, False, False, False, False, False)
