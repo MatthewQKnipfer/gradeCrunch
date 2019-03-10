@@ -31,7 +31,7 @@ def have():
         x = 2
 
     # Projects
-    projectYN = input("Do you have tests (True/False): ")
+    projectYN = input("Do you have projects (True/False): ")
 
     if projectYN == True:
         x = 1
@@ -39,13 +39,20 @@ def have():
         x = 2
 
     # Final
-    finalYN = input("Do you have quizzes (True/False): ")
+    finalYN = input("Do you have a final (True/False): ")
 
     if finalYN == True:
         x = 1
     else:
         x = 2
 
+    # Other
+    otherYN = input("Do you have any other criteria you're graded on (True/False): ")
+
+    if otherYN == True:
+        x = 1
+    else:
+        x = 2
 
 
 
