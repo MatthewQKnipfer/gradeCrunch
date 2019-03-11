@@ -11,24 +11,19 @@ def have():
     homeworkYN = input("Do you have homework (True/False): ")
 
     if homeworkYN == True:
-        x = 1
-    else:
-        x = 2
+        homeworkNUM = input("How many assignments: ")
 
     # Quizzes
     quizYN = input("Do you have quizzes (True/False): ")
 
     if quizYN == True:
-        x = 1
-    else:
-        x = 2
+        quizNUM = input("How many quizzes: ")
+
     # Tests
     testYN = input("Do you have tests (True/False): ")
 
     if testYN == True:
-        x = 1
-    else:
-        x = 2
+       testNUM = input("How many tests: ")
 
     # Projects
     projectYN = input("Do you have projects (True/False): ")
