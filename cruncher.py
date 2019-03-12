@@ -49,7 +49,4 @@ def have():
     else:
         x = 2
 
-
-
-# Allocation of pie
-
+have(True)
