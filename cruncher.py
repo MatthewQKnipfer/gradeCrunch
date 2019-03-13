@@ -49,4 +49,4 @@ def have():
     else:
         x = 2
 
-have(True)
+have(True, 1, True, 1, True, 1, True, 1)
