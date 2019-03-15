@@ -3,47 +3,112 @@
 
 
 
-# Prompt do you have?
-
-# Homework
-
+# Function for asking what they have
 def have():
+    
+    # Initial input for homework
     homeworkYN = input("Do you have homework (True/False): ")
 
+    # Validate input of boolean
+    while (homeworkYN != True) || (homeworkYN != False):
+        homeworkYN = input("Invalid input.  Please try again (True/False): ")
+    
+    # If yes, follow up with asking how many assignments
     if homeworkYN == True:
         homeworkNUM = input("How many assignments: ")
+        
+        # Validate input of boolean
+        while (homeworkYN != True) || (homeworkYN != False):
+            homeworkYN = input("Invalid input.  Please try again (True/False): ")
 
-    # Quizzes
+    else pass
+
+
+
+    # Initial input for quizzes
     quizYN = input("Do you have quizzes (True/False): ")
 
-    if quizYN == True:
-        quizNUM = input("How many quizzes: ")
+    # Validate input of boolean
+    while (quizYN != True) || (quizYN != False):
+        quizYN = input("Invalid input.  Please try again (True/False): ")
+        
+        # If yes, follow up with asking how many quizzes
+        if quizYN == True:
+            quizNUM = input("How many quizzes: ")
+            
+            # Validate input of boolean
+            while (quizYN != True) || (quizYN != False):
+                quizYN = input("Invalid input.  Please try again (True/False): ")
 
-    # Tests
+    else pass
+
+
+
+    # Initial input for tests
     testYN = input("Do you have tests (True/False): ")
 
-    if testYN == True:
-       testNUM = input("How many tests: ")
+    # Validate input of boolean
+    while (testYN != True) || (testYN != False):
+        testYN = input("Invalid input.  Please try again (True/False): ")
+        
+        # If yes, follow up with asking how many tests
+        if testYN == True:
+            testNUM = input("How many tests: ")
+            
+            # Validate input of boolean
+            while (testYN != True) || (testYN != False):
+                testYN = input("Invalid input.  Please try again (True/False): ")
 
-    # Projects
+    else pass
+
+
+
+    # Initial input for projects
     projectYN = input("Do you have projects (True/False): ")
 
-    if projectYN == True:
-       projectNUM = input("How many projects: ")
+    # Validate input of boolean
+    while (projectYN != True) || (projectYN != False):
+        projectYN = input("Invalid input.  Please try again (True/False): ")
+        
+        # If yes, follow up with asking how many projects
+        if projectYN == True:
+            projectNUM = input("How many projects: ")
+            
+            # Validate input of boolean
+            while (projectN != True) || (projectYN != False):
+                projectYN = input("Invalid input.  Please try again (True/False): ")
 
-    # Final
+    else pass
+
+
+
+    # Initial input for final
     finalYN = input("Do you have a final (True/False): ")
 
-    if finalYN == True:
-        x = 1
-    else:
-        x = 2
+    # Validate input of boolean
+    while (finalYN != True) || (finalYN != False):
+        finalYN = input("Invalid input.  Please try again (True/False): ")
 
-    # Other
-    otherYN = input("Do you have any other criteria you're graded on (True/False): ")
+    else pass
 
-    if otherYN == True:
-       otherNUM = input("How many other items: ")
+
+
+    # Initial input for other
+    otherYN = input("Do you have any other criteria you are graded on (True/False): ")
+
+    # Validate input of boolean
+    while (otherYN != True) || (otherYN != False):
+        otherYN = input("Invalid input.  Please try again (True/False): ")
+        
+        # If yes, follow up with asking how many other
+        if otherYN == True:
+            otherNUM = input("How many other items: ")
+            
+            # Validate input of boolean
+            while (otherYN != True) || (otherYN != False):
+                otherYN = input("Invalid input.  Please try again (True/False): ")
+
+    else pass
 
 have(True, 1, True, 1, True, 1, True, True, True, True)
 have(False, False, False, False, False, False)
