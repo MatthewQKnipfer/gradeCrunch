@@ -3,14 +3,25 @@
 
 
 
-# Function for asking what they have
+# Free form input
+freeYN = input("Would you like to follow up a pre-defined criteria list or enter your own (True/False): ")
+
+# Validate input of boolean
+while (freeYN != True) and (freeYN != False):
+    freeYN = input("Invalid input.  Please try again (True/False): ")
+
+
+
+
+
+# Function for asking what grading criteria they have
 def have():
     
     # Initial input for homework
     homeworkYN = input("Do you have homework (True/False): ")
 
     # Validate input of boolean
-    while (homeworkYN != True) || (homeworkYN != False):
+    while (homeworkYN != True) and (homeworkYN != False):
         homeworkYN = input("Invalid input.  Please try again (True/False): ")
     
     # If yes, follow up with asking how many assignments
@@ -18,7 +29,7 @@ def have():
         homeworkNUM = input("How many assignments: ")
         
         # Validate input of boolean
-        while (homeworkYN != True) || (homeworkYN != False):
+        while (homeworkYN != True) and (homeworkYN != False):
             homeworkYN = input("Invalid input.  Please try again (True/False): ")
 
     else pass
@@ -29,7 +40,7 @@ def have():
     quizYN = input("Do you have quizzes (True/False): ")
 
     # Validate input of boolean
-    while (quizYN != True) || (quizYN != False):
+    while (quizYN != True) and (quizYN != False):
         quizYN = input("Invalid input.  Please try again (True/False): ")
         
         # If yes, follow up with asking how many quizzes
@@ -37,7 +48,7 @@ def have():
             quizNUM = input("How many quizzes: ")
             
             # Validate input of boolean
-            while (quizYN != True) || (quizYN != False):
+            while (quizYN != True) and (quizYN != False):
                 quizYN = input("Invalid input.  Please try again (True/False): ")
 
     else pass
@@ -48,7 +59,7 @@ def have():
     testYN = input("Do you have tests (True/False): ")
 
     # Validate input of boolean
-    while (testYN != True) || (testYN != False):
+    while (testYN != True) and (testYN != False):
         testYN = input("Invalid input.  Please try again (True/False): ")
         
         # If yes, follow up with asking how many tests
@@ -56,7 +67,7 @@ def have():
             testNUM = input("How many tests: ")
             
             # Validate input of boolean
-            while (testYN != True) || (testYN != False):
+            while (testYN != True) and (testYN != False):
                 testYN = input("Invalid input.  Please try again (True/False): ")
 
     else pass
@@ -67,7 +78,7 @@ def have():
     projectYN = input("Do you have projects (True/False): ")
 
     # Validate input of boolean
-    while (projectYN != True) || (projectYN != False):
+    while (projectYN != True) and (projectYN != False):
         projectYN = input("Invalid input.  Please try again (True/False): ")
         
         # If yes, follow up with asking how many projects
@@ -75,7 +86,7 @@ def have():
             projectNUM = input("How many projects: ")
             
             # Validate input of boolean
-            while (projectN != True) || (projectYN != False):
+            while (projectN != True) and (projectYN != False):
                 projectYN = input("Invalid input.  Please try again (True/False): ")
 
     else pass
@@ -86,7 +97,7 @@ def have():
     finalYN = input("Do you have a final (True/False): ")
 
     # Validate input of boolean
-    while (finalYN != True) || (finalYN != False):
+    while (finalYN != True) and (finalYN != False):
         finalYN = input("Invalid input.  Please try again (True/False): ")
 
     else pass
@@ -97,7 +108,7 @@ def have():
     otherYN = input("Do you have any other criteria you are graded on (True/False): ")
 
     # Validate input of boolean
-    while (otherYN != True) || (otherYN != False):
+    while (otherYN != True) and (otherYN != False):
         otherYN = input("Invalid input.  Please try again (True/False): ")
         
         # If yes, follow up with asking how many other
@@ -105,7 +116,7 @@ def have():
             otherNUM = input("How many other items: ")
             
             # Validate input of boolean
-            while (otherYN != True) || (otherYN != False):
+            while (otherYN != True) and (otherYN != False):
                 otherYN = input("Invalid input.  Please try again (True/False): ")
 
     else pass
